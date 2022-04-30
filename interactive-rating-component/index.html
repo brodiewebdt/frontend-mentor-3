@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Interactive rating component</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="css/andy-bell-reset.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <!-- Rating state start -->
+        <div id="overlay"></div>
+        <main>
+            <div class="card-wrapper">
+                <div class="card ratings-card">
+                    <div class="icon-holder">
+                        <img src="images/icon-star.svg" alt="" />
+                    </div>
+                    <!-- /.icon-holder -->
+                    <h1 class="card-title">How did we do?</h1>
+                    <p class="card-description">
+                        Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve our
+                        offering!
+                    </p>
+                    <div class="ratings-block">
+                        <input
+                            class="sr-only"
+                            type="radio"
+                            id="one"
+                            name="customer-rating"
+                            value="1"
+                        />
+                        <label for="one" class="selection"> 1 </label>
+
+                        <input
+                            class="sr-only"
+                            type="radio"
+                            id="two"
+                            name="customer-rating"
+                            value="2"
+                        />
+                        <label for="two" class="selection"> 2 </label>
+
+                        <input
+                            class="sr-only"
+                            type="radio"
+                            id="three"
+                            name="customer-rating"
+                            value="3"
+                        />
+                        <label for="three" class="selection"> 3 </label>
+
+                        <input
+                            class="sr-only"
+                            type="radio"
+                            id="four"
+                            name="customer-rating"
+                            value="4"
+                        />
+                        <label for="four" class="selection"> 4 </label>
+
+                        <input
+                            class="sr-only"
+                            type="radio"
+                            id="five"
+                            name="customer-rating"
+                            value="5"
+                        />
+                        <label for="five" class="selection"> 5 </label>
+                    </div>
+                    <!-- /.ratings-block -->
+
+                    <button class="btn btn-submit">Submit</button>
+                </div>
+                <!-- /.card -->
+
+                <div class="card success-card">
+                    <div class="image-holder">
+                        <img src="images/illustration-thank-you.svg" alt="" />
+                    </div>
+                    <!-- /.image-holder -->
+                    <p class="rating-result">
+                        You selected <span class="user-rating">4</span> out of 5
+                    </p>
+                    <h2 class="thanks">Thank you!</h2>
+                    <p class="greeting">
+                        We appreciate you taking the time to give a rating. If
+                        you ever need more support, don't hesitate to get in
+                        touch!
+                    </p>
+                </div>
+                <!-- /.card success-card -->
+            </div>
+            <!-- /.card-wrapper -->
+        </main>
+
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/brodiewebdt">David Turner</a>.
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
